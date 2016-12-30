@@ -1,0 +1,79 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<style>
+# cccc {text-align : left;
+  }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>設計</title>
+<link href="13.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="11.js"></script>
+<script>
+
+
+function ca() {
+var a = parseInt(document.getElementById('a').value);
+var b = parseInt(document.getElementById('b').value);
+cc(a,b);
+}
+
+
+function cc(size,endsize)
+{
+
+if(endsize>size)
+{
+var i;
+for(i=size;i<=endsize;i++)
+{
+if(i>10000000)
+{
+var num = i;
+document.write("學號"+i+"~"   );
+var n = num.toString();
+var s1="http://120.96.82.25/student/校園IC卡照片檔/student/"+n+".jpg";
+document.write("  <a href=''>    <img src='" + s1 + " '   /  >     </a>"  );
+}
+if(i<1000000)
+{
+var num = i;
+document.write("學號00"+i+"~"   );
+var n = num.toString();
+var s1="http://120.96.82.25/student/校園IC卡照片檔/student/00"+n+".jpg";
+document.write("  <a href=''>    <img src='" + s1 + " '   /  >     </a>"  );
+}
+if(i<10000000&&i>1000000)
+{
+var num = i;
+document.write("學號0"+i+"~"   );
+var n = num.toString();
+var s1="http://120.96.82.25/student/校園IC卡照片檔/student/0"+n+".jpg";
+document.write("  <a href=''>    <img src='" + s1 + " '   /  >     </a>"  );
+}
+}
+}
+if(endsize==1)
+{
+var num = size;
+document.write("學號0"+size+"~"   );
+var n = num.toString();
+var s1="http://120.96.82.25/student/校園IC卡照片檔/student/0"+n+".jpg";
+document.write("  <a href=''>    <img src='" + s1 + " '   /  >     </a>"  );
+}
+}
+</script>
+</head>
+<body>
+<tr>
+<div id="cccc">
+開始 <input id='a' size="3"/> 
+結尾<input id='b' size="3"/> 
+<button onclick="ca()" style="width: 30; height:25">輸入</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+# lol{text-align:left;
+     display:block;}
+# cll{text-align:left;
+  }
+iframe:focus { 
+    outline: none;
+}
+iframe[seamless] { 
+    display: block;
+}</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>設計</title>
+<link href="13.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="11.js"></script>
+</head>
+<body><div id="cll">輸入1指輸入一個 點及照片自動回首頁</div>
+
+<html>
+    <head>
+        <meta content="text/html; charset=Big5" http-equiv="content-type">
+        <script type="text/javascript">
+function SendMsg()
+{
+
+    
+bb.contentDocument.getElementById("ctl00_cphContent_txtstudent").value = document.getElementByd("src").value;
+
+}
+
+            window.onload = function() {
+            
+                document.getElementById('add').onclick = function() {
+                    var i;
+                    for(i=0;i<=2;i++){
+                    var images = document.getElementById('images');
+                    
+                   var img = document.createElement('img');
+                    img.src ="http://120.96.82.25/student/校園IC卡照片檔/student/" +document.getElementById('src').value+".jpg";
+                    img.onclick = function() {
+                        images.removeChild(this);}
+                    }
+                    
+                    images.appendChild(img);
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <input id="src" type="text"/><button id="add">新增圖片</button>
+        <div id="images"></div>
+    </body>
+</html>
+<input type="button" id=T1 value="送出↓" onclick="SendMsg()" />
+
+
+
+
+<div id=lol><iframe id=ss src="123.html" width="390" height="300" scrolling="yes" frameborder="0"> 
+</iframe> </div>
+<div id=lop>
+<iframe id=bb src="http://stu.mcu.edu.tw/appx/Activity/Acta01.aspx" width="700" height="500" scrolling="yes" frameborder="0"> </div>
+
+
+
+
+
+
+
+</body>
+</html>
