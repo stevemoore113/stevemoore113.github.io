@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+$(document).ready(function(){
+  
+        $("#photo").fadeIn();
+        $("#photo").fadeIn("slow");
+        $("#photo").fadeIn(3000);
+   
+});
+  </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <style>
+    .banner img{
+      width: 100%;
+      height:100%;
+    }
+  </style>
+
+<title>index2</title>
+/*自傳*/
+<style>
+
+  body{
+    background-color: #eee;
+    position: relative;
+  }
+
+ 
+
+  #wrapper{
+    background-color: #5599FF;
+  /*  max-width: 960px;*/
+    min-height: 600px;
+    height: auto;
+    padding: 0;
+  }
+  #side{
+    background-color: 	#B088FF;
+    min-height: 600px;
+    padding: 0;
+    height: auto;
+  }
+  #side2{
+    background-color: #5599FF;
+    min-height: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .profile{
+
+    text-align: center;
+    background-color: 	#00DD00;
+  }
+
+  .profile > img{
+    width: 150px;
+    height: 150px;
+  }
+
+.font-white{
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.contact{
+  background-color: 	#B088FF;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 30px;
+  min-height: 100%;
+  height: auto;
+  /*height:360px;*/
+}
+
+#resume{
+
+}
+
+#ablm{
+}
+
+.news {
+  background-color: gray;
+  border: solid 1px black;
+  }
+
+#index p {
+  float: right;
+  }
+
+
+
+.contact2{
+  background-color: 	#5599FF;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 30px;
+  min-height: 100%;
+  height: auto;
+  /*height:300px;*/
+}
+
+</style>
+<script type="text/javascript">
+$(function(){
+$('body').scrollspy({ target: '#navbar-example' })
+});
+</script>
+/*自傳*/
+
+<script type="text/javascript">
+
+
+
+  $(function(){
+    $("ul>li>a").click(function(event) {
+      event.preventDefault();
+      var ref = $(this).attr("href");
+      $("body,html").animate({scrollTop: $(ref).offset().top },1000);
+    });
+    $('body').scrollspy({target: '#navbar-example'})
+  });
+
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+
+</script>
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+  <div>
+  <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">我的個人介紹</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#index">首頁</a></li>
+          <li><a href="#about">個人介紹</a></li>
+          <li><a href="#photo">相片集</a></li>
+   
+
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
+
+
+
+
+<div id="index" class="banner">
+
+  <img class="img-responsive" src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/552193_364324033640346_218228651_n.jpg?oh=510e1d8827aef0a5fff591d96d1f74fc&oe=58E368EA">
+ 
+</div>
+<div id="about" class="resume">
+  <div  class="row" >
+    <div id="wrapper">
+    <div id="side" class="col-sm-4">
+        <div class="profile">
+          <img class="profile" src="https://media.giphy.com/media/9fbYYzdf6BbQA/giphy.gif">
+          <h2 class="font-white">笨蛋</h2>
+          <h4 class="font-white">出生:1995/06/21</h4>
+        </div>
+        <div class="contact">
+        <ui>
+          <h2 class="font-white">基本資料</h2>
+          <br>
+          <li>mail:beautifulword0621@yahoo.com.tw</li>
+          <br>
+          <li>地址:台北</li>
+          <br>
+          <li>phone:聯繫我摟</li>
+          <br>
+          <li>github:stevemoore113</li>
+          <br>
+          <li>FB:聯繫取得</li>
+
+        </ui>
+        </div>
+
+    </div>
+            <div id="side2" class="col-sm-8 ">
+                <div class="contact2">
+                  <h2 class="font-white">個人簡介</h2>
+                  <h4 class="font-white">肥宅一隻 無需介紹</h4>
+                </div>
+            </div>
+
+  </div>
+
+</div>
+</div>
+
+<div id="photo" class="ablm">
+    <div class="col-xs-6 col-sm-4 col-md-3">
+      <img  class="img-thumbnail" src="https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/15135809_1277006669038740_1690143655557526447_n.jpg?oh=19ad6ea047cfe7febdc8cdf42d4d8c67&oe=58DAEB28"  >
+    </div>
+</div>
+
+
+
+
+ <script language="javascript" type="text/javascript">
+        var wsUri = "ws://echo.websocket.org/";
+        var output;
+            function init() {
+                output = document.getElementById("output");
+                testWebSocket();
+            }
+            function testWebSocket() {
+                websocket = new WebSocket(wsUri);
+                websocket.onopen = function(evt) { 
+                    onOpen(evt)
+                    };
+                websocket.onclose = function(evt) {
+                    onClose(evt)
+                };
+                websocket.onmessage = function(evt) {
+                    onMessage(evt)
+                };
+                websocket.onerror = function(evt) {
+                    onError(evt)
+                };
+            }
+            function onOpen(evt) {
+                writeToScreen("CONNECTED"); 
+                doSend("你好歐 我現在在線上歐"); 
+            }  
+            function onClose(evt) { 
+                writeToScreen("DISCONNECTED"); 
+            }  
+            function onMessage(evt) { 
+                evt.data = "是歐";
+                  if(evt.data=="你好歐 我現在在線上歐")
+                      evt.data = "那我要嘴砲摟";
+                writeToScreen('RESPONSE: ' + evt.data+''); 
+                websocket.close(); 
+            }  
+            function onError(evt) { 
+
+                writeToScreen('ERROR: ' + evt.data); 
+            }  
+            function doSend(message) { 
+                writeToScreen("SENT: " + message);
+                websocket.send(message); 
+            }  
+            function writeToScreen(message) { 
+                var pre = document.createElement("p"); pre.style.wordWrap = "break-word"; pre.innerHTML = message; output.appendChild(pre); 
+            }  
+            window.addEventListener("load", init, false);  
+        </script> 
+
+
+
+
+
+      <div  class="col-sm-8 ">
+        <h2>找我？</h2>  
+        <div id="output"></div>  
+      </div>
+</body>
+</html>
